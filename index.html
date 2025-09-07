@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Green Earth</title>
+    <!--Daisy UI and Tailwind CDN-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!--Font Awesome CDN-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!--Google Font's CDN-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      * {
+        font-family: "Inter", sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <!--Navbar Section Starts here-->
+    <nav
+      class="bg-[#15803d] flex justify-between px-15 py-3 items-center text-white"
+    >
+      <div class="logo text-xl font-semibold">Green Earth</div>
+      <div class="nav-list">
+        <ul class="flex gap-3">
+          <li class="text-sm">About</li>
+          <li class="text-sm">Gallery</li>
+          <li class="text-sm">Plant a tree</li>
+        </ul>
+      </div>
+      <div class="plant-tree-btn">
+        <button
+          class="btn rounded-3xl bg-[#facc15] text-green-600 outline-none"
+        >
+          Plant a Tree
+        </button>
+      </div>
+    </nav>
+
+    <!--Banner Section Starts here-->
+    <div
+      id="banner-container"
+      class="flex items-center justify-between bg-[#cff0dc]"
+    >
+      <div class="banner-left-img flex-1">
+        <img src="./assets/hero-leaf1.png" alt="" />
+      </div>
+      <div class="banner-center-content flex-1 text-center">
+        <h1 class="text-4xl font-bold">Plant a Tree, Grow a Future</h1>
+        <p class="px-2 py-2">
+          Join our mission to plant 1 million trees and make the Earth greener
+          for future generations.
+        </p>
+        <button
+          class="btn rounded-3xl bg-[#facc15] text-green-600 outline-none"
+        >
+          Get Involved
+        </button>
+      </div>
+      <div class="banner-right-img flex-1">
+        <img src="./assets/hero-leaf2.png" alt="" />
+      </div>
+    </div>
+  </body>
+</html>
