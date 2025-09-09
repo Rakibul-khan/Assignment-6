@@ -11,7 +11,7 @@ const displayCategories = (categories) => {
     let categoryLi = document.createElement("div");
     categoryLi.classList.add("active");
     categoryLi.innerHTML = `
-    <button id="category-btn-${category}" class="cursor-pointer py-4 px-2 rounded-xl" onclick ="loadCategoryFruit(${category.id})">${category.category_name}</button>`;
+    <button id="category-btn-${category}" class="cursor-pointer py-4 px-2  rounded-xl" onclick ="loadCategoryFruit(${category.id})">${category.category_name}</button>`;
     categoriesSection.appendChild(categoryLi);
   }
 };
@@ -142,14 +142,15 @@ let renderCart = () => {
     <div>
     <h3 class="font-semibold">${item}</h3>
     <p class="text-gray-600">৳${cart[item].price} x ${cart[item].quantity}</p>
-    </div>
     <button onclick="removeItem('${item}')" class="text-gray-500 hover:text-red-600 font-bold text-lg">x</button>
+    </div>
+    
     `;
   }
+  addCartSection.innerHTML += `
+      <hr class="my-2">
+      <h3 class="font-semibold text-lg flex justify-between">
+        <span>Total:</span> <span>৳${total}</span>
+      </h3>
+    `;
 };
-addCartSection.innerHTML += `
-    <hr class="my-2">
-    <h3 class="font-semibold text-lg flex justify-between">
-      <span>Total:</span> <span>৳${total}</span>
-    </h3>
-  `;
