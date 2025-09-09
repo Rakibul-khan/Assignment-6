@@ -12,4 +12,5 @@
    here what's happening is that a will be 1 and b will be 2 and the last one c will be 0 . This is how destructuring is works.
 
 5. Explain template literals in ES6. How are they different from string concatenation?
-   ans:Template literals introduced in ECMAScript 2015 are type of string literal inclosed in backticks (``)
+   ans:Template literals introduced in ECMAScript 2015 are type of string literal inclosed in backticks (``).
+   The key difference from string concatenation are Template literals allow direct use of variables,function calls,artithmetatic operations within the string using ${}like this.Template literals natively support multi-line strings without need the \n .
